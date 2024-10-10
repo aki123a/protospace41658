@@ -12,6 +12,9 @@
 | occupation         | text   | null:false              |
 | position           | text   | null:false              |
 
+- has_many :prototypes
+- has_many :comments
+
 ## prototypes テーブル
 | Column             | Type      | Options      |
 | ------------------ | ------    | ------------ |
@@ -20,9 +23,15 @@
 | concept            | text      | null:false   |
 | user               | reference | null:false   |
 
+- belongs_to :user
+- has_many :comments
+
 ## comments テーブル
 | Column             | Type      | Options              |
 | ------------------ | ------    | -------------------- |
 | content            | text      | null:false           |
 | prototype          | reference | null:false,外部キー   |
 | user               | reference | null:false,外部キー   |
+
+- belongs_to :user
+- has_many :prototypes
