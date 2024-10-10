@@ -34,4 +34,4 @@
 | user               | reference | null:false,外部キー   |
 
 - belongs_to :user
-- has_many :prototypes
+- belongs_to :prototype
