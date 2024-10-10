@@ -33,5 +33,7 @@
 | prototype          | reference | null:false,外部キー   |
 | user               | reference | null:false,外部キー   |
 
-- belongs_to :user
+### Association
+
 - belongs_to :prototype
+- belongs_to :user
