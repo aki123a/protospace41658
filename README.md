@@ -26,6 +26,7 @@ Things you may want to cover:
 
 ## users テーブル
 | Column             | Type   | Options                 |
+| -----            - | ------ | ----------------------- |
 | email              | string | null:false, email (U)   |
 | encrypted_password | string | null:false              |
 | name               | string | null:false              |
