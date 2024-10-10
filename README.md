@@ -22,4 +22,13 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
-##　ProtoSpaceのER図
+# ProtoSpaceのER図
+
+## users テーブル
+| Column             | Type   | Options                 |
+| email              | string | null:false, email (U)   |
+| encrypted_password | string | null:false              |
+| name               | string | null:false              |
+| profile            | text   | null:false              |
+| occupation         | text   | null:false              |
+| position           | text   | null:false              |
